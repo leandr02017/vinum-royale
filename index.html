@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vinum Royale</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css
+  ">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&amp;family=Roboto:wght@700&amp;display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+
+  <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+    <div class="container">
+      <img src="./image/logo.png" alt="Logo">
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+        <ul class="nav nav-pills d-block d-md-flex">
+          <li class="nav-item fw-bold">
+            <a href="#sobre-a-loja" class="nav-link active">
+              <i class="bi bi-house-door me-1"></i>
+              Sobre o restaurante
+            </a>
+          </li>
+          <li class="nav-item fw-bold">
+            <a href="#nosso-produto" class="nav-link">
+              <i class="bi bi-card-text me-1"></i>
+              Nosso Produto
+            </a>
+          </li>
+          <li class="nav-item fw-bold">
+            <a href="#localizacao" class="nav-link">
+              <i class="bi bi-geo-alt me-1"></i>
+              Nossas Localizações
+            </a>
+          </li>
+          <li class="nav-item fw-bold">
+            <a href="#fale-conosco" class="nav-link">
+              <i class="bi bi-chat-left-text me-1"></i>
+              Fale conosco
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-control="true">
+
+    <section id="sobre-a-loja">
+      <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="./image/slide/slide 1.png" class="img-carousel" alt="slide 1">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="./image/slide/slide 2.png" class="img-carousel" alt="slide 2">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="./image/slide/slide 3.png" class="img-carousel" alt="slide 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0" aria-current="true"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+        </div>
+      </div>
+
+      <div class="pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5 img-sobre">
+              <img src="./image/6_bares_so_de_vinhos_em_sao_paulo.png" class="rounded img-fluid" alt="restaurante">
+            </div>
+            <div class="col-md-7 mt-3 mt-md-0">
+              <h2 class="section-title fs-1">Sobre <span class="text-colored"> a Loja</span></h2>
+              <p class="fs-3">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos esse ullam iure voluptatem at earum mollitia.
+              </p>
+              <h3 class="section-title fs-1">Sobre <span class="text-colored">o espaço</span></h3>
+              <p class="fs-3">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam error enim voluptatibus debitis tempore exercitationem provident ad culpa, illum illo aliquid reiciendis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="nosso-produto">
+      <div class="container pb-5 pt-5">
+        <div class="row">
+          <h2 class="section-title text-center mb-5 title-produto">Nosso produto</h2>
+        </div>
+        <div class="row">
+          <aside class="col-md-3">
+            <nav class="nav nav-pills flex-column nav-produto" role="tablist">
+              <button type="button" data-bs-toggle="tab" data-bs-target="#vinho-tinto" class="nav-link fw-bold text-start text-white active p-3" arial-selected="true" role="tab">Vinho tinto</button>
+              <button type="button" data-bs-toggle="tab" data-bs-target="#vinho-suave" class="nav-link fw-bold text-start text-white p-3" arial-selected="false" tab-index="-1" role="tab">Vinho Suave</button>
+              <button type="button" data-bs-toggle="tab" data-bs-target="#vinho-branco" class="nav-link fw-bold text-start text-white p-3" arial-selected="false" tab-index="-1" role="tab">Vinho Branco</button>
+              <button type="button" data-bs-toggle="tab" data-bs-target="#vinho-rose" class="nav-link fw-bold text-start text-white p-3" arial-selected="false" tab-index="-1" role="tab">Vinho Rosé</button>
+            </nav>
+          </aside>
+          <div class="col-md-9">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="vinho-tinto" role="tabpanel">
+                <div class="row">
+                  <div class="col-md-3">
+                    <img class="d-block w-100" src="./image/produtos/vinho-tinto/don-laurindo-don-tannat_1.jpg" alt="laurindo">
+                    <h5 class="text-white mt-3">Don Laurindo Don Tannat</h5>
+                    <p class="fs-3 mb-4 fw-bold">R$ 265,00</p>
+                  </div>
+                  <div class="col-md-3">
+                    <img class="d-block w-100" src="./image/produtos/vinho-tinto/g_es_minerais-syrah.jpg" alt="laurindo">
+                    <h5 class="text-white mt-3">Tempos de Góes Míneres Syrah</h5>
+                    <p class="fs-3 mb-4 fw-bold">R$ 98,80</p>
+                  </div>
+                  <div class="col-md-3">
+                    <img class="d-block w-100" src="./image/produtos/vinho-tinto/g_es_philosophia.jpg" alt="laurindo">
+                    <h5 class="text-white mt-3">Góes Philosophia Cabernet Franc</h5>
+                    <p class="fs-3 mb-4 fw-bold">R$ 159,00</p>
+                  </div>
+                  <div class="col-md-3">
+                    <img class="d-block w-100" src="./image/produtos/vinho-tinto/g_es_tempos-de-goes_reserva_malbec.jpg" alt="laurindo">
+                    <h5 class="text-white mt-3">Tempos de Góes Reserva Malbec</h5>
+                    <p class="fs-3 mb-4 fw-bold">R$ 88,00</p>
+                  </div>
+                  <div class="col-md-3">
+                    <img class="d-block w-100" src="./image/produtos/vinho-tinto/primeira-estrada-gran-reserva-syrah.jpg" alt="laurindo">
+                    <h5 class="text-white mt-3">Primeira Estrada Gran Reserva Syrah</h5>
+                    <p class="fs-3 mb-4 fw-bold">R$ 329,00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="vinho-suave" role="tabpanel">
+                <div class="row">
+                  <div class="col-md-3">
+                    <img class="d-block w-100" src="./image/produtos/suave/aurora-colheita-tardia-tinto.jpg" alt="laurindo">
+                    <h5 class="text-white mt-3">Aurora Colheita Tardia Tinto</h5>
+                    <p class="fs-3 mb-4 fw-bold">R$ 24,80</p>
+                  </div>
+                  <div class="col-md-3">
+                    <img class="d-block w-100" src="./image/produtos/suave/galiotto-tinto-suave-375ml.jpg" alt="laurindo">
+                    <h5 class="text-white mt-3">Galiotto Tinto Suave 375 ml</h5>
+                    <p class="fs-3 mb-4 fw-bold">R$ 14,80</p>
+                  </div>
+                  <div class="col-md-3">
+                    <img class="d-block w-100" src="./image/produtos/suave/verza_1l.webp" alt="laurindo">
+                    <h5 class="text-white mt-3">Bodega Verza Tinto Suave 1 Ll</h5>
+                    <p class="fs-3 mb-4 fw-bold">R$ 19,90</p>
+                  </div>
+                  <div class="col-md-3">
+                    <img class="d-block w-100" src="./image/produtos/suave/catania-suave.jpg" alt="laurindo">
+                    <h5 class="text-white mt-3">Catania Tinto Suave</h5>
+                    <p class="fs-3 mb-4 fw-bold">R$ 24,00</p>
+                  </div>
+                  <div class="col-md-3">
+                    <img class="d-block w-100" src="./image/produtos/suave/mioranza-tinto-suave-750.jpg" alt="laurindo">
+                    <h5 class="text-white mt-3">Mioranza Tinto Suave</h5>
+                    <p class="fs-3 mb-4 fw-bold">R$ 16,00</p>
+                  </div>
+                  <div class="col-md-3">
+                    <img class="d-block w-100" src="./image/produtos/suave/gallo-rosso-tinto-suave.jpg" alt="laurindo">
+                    <h5 class="text-white mt-3">Gallo Rosso Di Venturini Suave</h5>
+                    <p class="fs-3 mb-4 fw-bold">R$ 40,00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="vinho-branco" role="tabpanel">
+                <div class="row">
+                  <div class="col-md-3">
+                    <img class="d-block w-100" src="./image/produtos/vinho-branco/g_es_tempo_de_goes_sauvignon-blanc.jpg" alt="laurindo">
+                    <h5 class="text-white mt-3">
+                      Tempos de Góes Reserva Sauvignon Blanc
+                    </h5>
+                    <p class="fs-3 mb-4 fw-bold">R$ 82,00</p>
+                  </div>
+                  <div class="col-md-3">
+                    <img class="d-block w-100" src="./image/produtos/vinho-branco/aurora-pinto-bandeira_riesling.jpg" alt="laurindo">
+                    <h5 class="text-white mt-3">
+                      Aurora Pinto Bandeira Riesling I.P.
+                    </h5>
+                    <p class="fs-3 mb-4 fw-bold">R$ 65,80</p>
+                  </div>
+                  <div class="col-md-3">
+                    <img class="d-block w-100" src="./image/produtos/vinho-branco/parole-di-famiglia-alvarinho_1.jpg" alt="laurindo">
+                    <h5 class="text-white mt-3">
+                      Parole di Famiglia Alvarinho
+                    </h5>
+                    <p class="fs-3 mb-4 fw-bold">R$ 84,80</p>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="vinho-rose" role="tabpanel">
+                <div class="row">
+                  <div class="col-md-3">
+                    <img class="d-block w-100" src="./image/produtos/vinho-rosé/galiotto_ros_.jpg" alt="laurindo">
+                    <h5 class="text-white mt-3">
+                      Casa Galiotto Rosé
+                    </h5>
+                    <p class="fs-3 mb-4 fw-bold">R$ 44,80</p>
+                  </div>
+                  <div class="col-md-3">
+                    <img class="d-block w-100" src="./image/produtos/vinho-rosé/dom-candido-autentico_rose_1.jpg" alt="laurindo">
+                    <h5 class="text-white mt-3">
+                      Dom Cândido Autêntico Rose
+                    </h5>
+                    <p class="fs-3 mb-4 fw-bold">R$ 48,00</p>
+                  </div>
+                  <div class="col-md-3">
+                    <img class="d-block w-100" src="./image/produtos/vinho-rosé/marco-luigi-vinho-tributo-rose-malbec.jpg" alt="laurindo">
+                    <h5 class="text-white mt-3">
+                      Marco Luigi Tributo Rosé Malbec
+                    </h5>
+                    <p class="fs-3 mb-4 fw-bold">R$ 61,00</p>
+                  </div>
+                  <div class="col-md-3">
+                    <img class="d-block w-100" src="./image/produtos/vinho-rosé/vf_rose.jpg" alt="laurindo">
+                    <h5 class="text-white mt-3">
+                      Villa Francioni Rosé
+                    </h5>
+                    <p class="fs-3 mb-4 fw-bold">R$ 128,00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="localizacao">
+      <div class="container pb-5 pt-5">
+        <div class="row">
+          <h2 class="section-title fs-1 mb-5 text-center"> Nossas <span class="text-colored">Localizações</span></h2>
+          <div class="row">
+            <div class="row">
+              <div class="col-sm-4 mb-4 mb-sm-0">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <img src="./fachada 1.png" class="w-100">
+                    <p class="card-text mt-4 fw-bold fs-4">
+                      <i class="bi bi-pin-map-fill text-white fs-4"></i>
+                      Rua Professor Andrade, nº 301 Bairro Alvorada - São Paulo, SP
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card">
+                  <div class="card-body">
+                    <img src="./fachada 2.png" class="w-100">
+                    <p class="card-text mb-4 mt-4 fw-bold fs-4">
+                      <i class="bi bi-pin-map-fill text-white fs-4"></i>
+                      Avenida das Palmeiras, nº 507 Bairro Jardim das Flores - Rio de Janeiro, RJ.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card">
+                  <div class="card-body">
+                    <img src="./fachada 3.png" class="w-100">
+                    <p class="card-text mb-4 mt-4 fw-bold fs-4">
+                      <i class="bi bi-pin-map-fill text-white fs-4"></i>
+                      Rua do Sol Nascente, nº 1202 Bairro Vista Alegre - Porto Alegre, RS.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="fale-conosco" class="pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 mb-5">
+            <form>
+              <div class="mb-3">
+                <label for="nome" class="form-label fw-bold text-white">Seu nome</label>
+                <input type=" text" name="nome" id="nome" class="form-control" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label fw-bold text-white">Seu e-mail</label>
+                <input type="email" name="email" id="email" class="form-control" required>
+              </div>
+              <div class="mb-3">
+                <label for="telefone" class="form-label fw-bold text-white">Seu telefone (opcional)</label>
+                <input type="tel" name="tel" id="telefone" class="form-control">
+              </div>
+              <div class="mb-3">
+                <label for="mensagem" class="form-label fw-bold text-white">Seu mensagem</label>
+                <textarea class="form-control" id="mensagem" required></textarea>
+              </div>
+              <button type="submit" class="btn fw-bold">Enviar</button>
+            </form>
+          </div>
+          <div class="col-md-5">
+            <div class="row">
+              <h3 class="section-title fs-4 text-white">
+                <i class="bi bi-hand-thumbs-up-fill"></i>
+                Redes sociais
+              </h3>
+              <ul class="social-links">
+                <li class="fs-5">
+                  <a href="#">
+                    <i class="bi bi-facebook text-white"></i>
+                  </a>
+                </li>
+                <li class="fs-5 ms-1 me-1">
+                  <a href="#">
+                    <i class="bi bi-instagram text-white"></i>
+                  </a>
+                </li>
+                <li class="fs-5">
+                  <a href="#">
+                    <i class="bi bi-whatsapp text-white"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="row mt-4">
+              <h3 class="section-title fs-4 text-white">
+                <i class="bi bi-cursor-fill"></i>
+                Endereço
+              </h3>
+              <p>
+                Rua Teste Exemplo nº 154, Bairro Bootstrap - São Paulo - SP
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js
+  "></script>
+</body>
+
+</html>

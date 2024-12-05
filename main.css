@@ -1,0 +1,76 @@
+.navbar,
+#nosso-produto,
+#fale-conosco {
+  background-color: black;
+}
+
+.img-carousel {
+  width: 100%;
+}
+
+.navbar img {
+  height: 3.8em;
+}
+
+#cabecalho .nav .nav-link.active {
+  background-color: white;
+  color: black;
+}
+
+.img-sobre img {
+  height: 25em;
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-cardapio .nav-link.active:hover {
+  color: white;
+}
+
+.navbar-toggler {
+  background-color: white;
+}
+
+.section-title {
+  font-family: Pacifico, cursive;
+}
+
+#sobre-a-loja,
+#localizacao {
+  background-color: #0000007e;
+}
+
+.text-colored {
+  color: black;
+}
+
+.nav-produto .nav-link.active,
+#fale-conosco button {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.card {
+  background-color: black;
+}
+
+h2,
+p,
+h3,
+ul {
+  color: white;
+}
+
+.nav-cardapio .nav-link:hover {
+  color: #25252541;
+}
+
+.social-links li {
+  list-style: none;
+  display: inline;
+}
+
+.social-links a {
+  text-decoration: none;
+}
